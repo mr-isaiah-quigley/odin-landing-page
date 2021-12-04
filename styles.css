@@ -66,22 +66,42 @@ body {
 }
 
 .information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0 64px;
+    padding: 0 128px 64px;
 }
 
 .info-title {
     color: #1F2937;
     font-size: 36px;
     font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px 0;
 }
 
 .info-apps {
     display: flex;
     justify-content: center;
     gap: 32px;
+}
+
+.plan, .assess, .grade, .learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+
+.info-apps img {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #3882F6;
+    border-radius: 25px;
+}
+
+.subtext {
+    margin-top: 16px;
 }
 
 .quote {
